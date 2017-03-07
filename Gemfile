@@ -18,6 +18,9 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'rails-i18n', '~> 5.0', '>= 5.0.3'
+gem 'devise-i18n', '~> 1.1', '>= 1.1.1'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
