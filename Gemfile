@@ -31,6 +31,8 @@ group :development, :test do
   gem 'spring'
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  gem 'bullet', '~> 5.5', '>= 5.5.1'
 end
 
 
