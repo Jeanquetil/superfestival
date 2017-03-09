@@ -1,16 +1,13 @@
 # == Schema Information
 #
-# Table name: festivals
+# Table name: artists
 #
 #  id         :integer          not null, primary key
 #  name       :string
-#  start_date :time
-#  end_date   :time
-#  location   :string
-#  photo      :string
+#  main_genre :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Festival < ApplicationRecord
+class Artist < ApplicationRecord
 end
