@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.4.0'
 
-gem 'rails', '5.0.1'
+gem 'rails', '5.1.0.rc1'
 gem 'puma'
 gem 'pg'
 gem 'figaro'
@@ -10,6 +10,7 @@ gem 'devise'
 gem 'redis'
 
 gem 'haml'
+
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
