@@ -11,6 +11,7 @@
 #  updated_at :datetime         not null
 #
 
+# model describing the festivals
 class Festival < ApplicationRecord
 	has_many :concerts
 	has_many :artists, through: :concerts

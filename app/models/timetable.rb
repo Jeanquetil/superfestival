@@ -16,6 +16,7 @@
 #  fk_rails_e33000e2b1  (festival_id => festivals.id)
 #
 
+# model describing the timetable of some users for a fiven festival
 class Timetable < ApplicationRecord
   belongs_to :festival
   has_many :participations
