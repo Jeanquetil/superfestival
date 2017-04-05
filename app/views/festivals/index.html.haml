@@ -1,0 +1,10 @@
+.container
+  .row
+    .col-xs-12
+      %h1.header-title= t("festivals.home.headertitle")
+      - @festivals.each do |festival|
+        .col-xs-12.col-md-6.col-lg-4
+          = link_to(festival.name, festival_path(festival))
+  .row
+    .col-xs-12
+      %h2= t("festivals.home.concepttitle")

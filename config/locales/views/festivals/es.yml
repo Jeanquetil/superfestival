@@ -1,3 +1,5 @@
 es:
   festivals:
-    index:
+    home:
+      headertitle: "Super Festival"
+      concepttitle: "Concepto"

@@ -1,4 +1,6 @@
 en:
   festivals:
-    index:
-      
+    home:
+      headertitle: "Super Festival"
+      concepttitle: "Concept"
+
