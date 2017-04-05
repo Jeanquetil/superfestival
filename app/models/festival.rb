@@ -7,7 +7,6 @@
 #  start_date :time
 #  end_date   :time
 #  location   :string
-#  photo      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
