@@ -25,11 +25,12 @@
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #
 
+# model describing the users
 class User < ApplicationRecord
 	has_many :participations
-  has_many :timetables, through: :participations
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+	has_many :timetables, through: :participations
+	# Include default devise modules. Others available are:
+	# :confirmable, :lockable, :timeoutable and :omniauthable
+	devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 end

@@ -19,6 +19,8 @@
 #  fk_rails_ee6a65eb2d  (concert_id => concerts.id)
 #
 
+# model describing a single even in a timetable
+# join timetable and concerts
 class TimetableEvent < ApplicationRecord
   belongs_to :timetable
   belongs_to :concert

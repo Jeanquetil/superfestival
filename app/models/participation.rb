@@ -19,6 +19,8 @@
 #  fk_rails_e80f5ca3a2  (user_id => users.id)
 #
 
+# join table between timetables and users
+# as a timetable can have several users
 class Participation < ApplicationRecord
   belongs_to :timetable
   belongs_to :user

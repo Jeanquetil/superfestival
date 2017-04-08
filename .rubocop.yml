@@ -1,0 +1,165 @@
+AllCops:
+  Include:
+    - 'Rakefile'
+    - 'config.ru'
+    - 'lib/**/*.rake'
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/**/*.rb'
+    - 'bin/**'
+
+StringLiterals:
+  Enabled: true
+  Exclude:
+    - 'spec/**/*.rb'
+
+Style/Tab:
+  Enabled: false
+
+Style/IndentationWidth:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+
+Style/Documentation:
+  Exclude:
+    - 'app/controllers/application_controller.rb'
+    - 'app/controllers/pages_controller.rb'
+    - 'app/helpers/application_helper.rb'
+    - 'app/helpers/pages_helper.rb'
+    - 'app/mailers/application_mailer.rb'
+    - 'app/models/application_record.rb'
+    - 'config/application.rb'
+
+Style/AlignHash:
+  Exclude:
+    - 'config/initializers/simple_form.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/initializers/simple_form_bootstrap.rb'
+    - 'lib/tasks/auto_annotate_models.rake'
+
+Style/AlignParameters:
+  Exclude:
+    - 'app/models/user.rb'
+
+Rails/FilePath:
+  Exclude:
+    - 'config/environments/development.rb'
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - 'config/initializers/simple_form_bootstrap.rb'
+#
+#
+#
+Rails/SaveBang:
+  Description: 'Identifies possible cases where Active Record save! or related should be used.'
+  StyleGuide: 'https://github.com/bbatsov/rails-style-guide#save-bang'
+  Enabled: true
+
+Style/AutoResourceCleanup:
+  Description: 'Suggests the usage of an auto resource cleanup version of a method (if available).'
+  Enabled: true
+
+Style/CollectionMethods:
+  Description: 'Preferred collection methods.'
+  StyleGuide: '#map-find-select-reduce-size'
+  Enabled: true
+
+Style/DocumentationMethod:
+  Description: 'Public methods.'
+  Enabled: true
+  Exclude:
+    - 'spec/**/*'
+
+Style/Encoding:
+  Description: 'Use UTF-8 as the source file encoding.'
+  StyleGuide: '#utf-8'
+  Enabled: true
+
+Style/FirstArrayElementLineBreak:
+  Description: >-
+                 Checks for a line break before the first element in a
+                 multi-line array.
+  Enabled: true
+
+Style/FirstHashElementLineBreak:
+  Description: >-
+                 Checks for a line break before the first element in a
+                 multi-line hash.
+  Enabled: true
+
+Style/FirstMethodArgumentLineBreak:
+  Description: >-
+                 Checks for a line break before the first argument in a
+                 multi-line method call.
+  Enabled: true
+
+Style/FirstMethodParameterLineBreak:
+  Description: >-
+                 Checks for a line break before the first parameter in a
+                 multi-line method parameter definition.
+  Enabled: true
+
+Style/ImplicitRuntimeError:
+  Description: >-
+                 Use `raise` or `fail` with an explicit exception class and
+                 message, rather than just a message.
+  Enabled: true
+
+Style/InlineComment:
+  Description: 'Avoid trailing inline comments.'
+  Enabled: true
+
+Style/MethodCalledOnDoEndBlock:
+  Description: 'Avoid chaining a method call on a do...end block.'
+  StyleGuide: '#single-line-blocks'
+  Enabled: true
+
+Style/MissingElse:
+  Description: >-
+                Require if/case expressions to have an else branches.
+                If enabled, it is recommended that
+                Style/UnlessElse and Style/EmptyElse be enabled.
+                This will conflict with Style/EmptyElse if
+                Style/EmptyElse is configured to style "both"
+  Enabled: false
+  EnforcedStyle: both
+  SupportedStyles:
+    # if - warn when an if expression is missing an else branch
+    # case - warn when a case expression is missing an else branch
+    # both - warn when an if or case expression is missing an else branch
+    - if
+    - case
+    - both
+
+Style/MultilineAssignmentLayout:
+  Description: 'Check for a newline after the assignment operator in multi-line assignments.'
+  StyleGuide: '#indent-conditional-assignment'
+  Enabled: true
+
+Style/OptionHash:
+  Description: "Don't use option hashes when you can use keyword arguments."
+  Enabled: true
+
+Style/Send:
+  Description: 'Prefer `Object#__send__` or `Object#public_send` to `send`, as `send` may overlap with existing methods.'
+  StyleGuide: '#prefer-public-send'
+  Enabled: true
+
+Style/StringMethods:
+  Description: 'Checks if configured preferred methods are used over non-preferred.'
+  Enabled: true
+
+Style/SingleLineBlockParams:
+  Description: 'Enforces the names of some block params.'
+  Enabled: true

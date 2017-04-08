@@ -1,12 +1,12 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }/
     %title TODO
     = csrf_meta_tags
     = action_cable_meta_tag
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{ :content => "width=device-width, initial-scale=1", :name => "viewport" }/
+    %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }/
     = stylesheet_link_tag    'application', media: 'all'
   %body
     = render 'shared/navbar'

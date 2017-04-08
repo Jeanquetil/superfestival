@@ -1,0 +1,7 @@
+linters:
+
+  LineLength:
+    max: 100
+    exclude:
+      - "app/views/devise/**/*.html.haml"
+      - "app/views/shared/_navbar.html.haml"

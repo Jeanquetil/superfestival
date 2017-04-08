@@ -21,6 +21,8 @@
 #  fk_rails_d40a0fb5cb  (artist_id => artists.id)
 #
 
+# model describing the concerts
+# events in which at artist play in a given festival
 class Concert < ApplicationRecord
   belongs_to :artist
   belongs_to :festival
