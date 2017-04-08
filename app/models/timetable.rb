@@ -17,7 +17,7 @@
 #
 
 class Timetable < ApplicationRecord
-  belongs_to :festival
+  belongs_to :festival, dependent: :nullify
   has_many :participations
   has_many :users, through: :participations
 end
