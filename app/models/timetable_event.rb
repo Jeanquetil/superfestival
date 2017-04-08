@@ -20,6 +20,6 @@
 #
 
 class TimetableEvent < ApplicationRecord
-  belongs_to :timetable, dependent: :nullify
-  belongs_to :concert, dependent: :nullify
+  belongs_to :timetable
+  belongs_to :concert
 end

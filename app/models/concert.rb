@@ -23,6 +23,6 @@
 #
 
 class Concert < ApplicationRecord
-  belongs_to :artist, dependent: :destroy
-  belongs_to :festival, dependent: :destroy
+  belongs_to :artist
+  belongs_to :festival
 end

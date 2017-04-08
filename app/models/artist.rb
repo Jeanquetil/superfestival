@@ -10,6 +10,6 @@
 #
 
 class Artist < ApplicationRecord
-	has_many :concerts
+	has_many :concerts, dependent: :destroy
 	has_many :festivals, through: :concerts
 end
