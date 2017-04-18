@@ -4,11 +4,11 @@
 #
 #  id         :integer          not null, primary key
 #  name       :string
-#  start_date :time
-#  end_date   :time
 #  location   :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  start_at   :datetime
+#  end_at     :datetime
 #
 
 class Festival < ApplicationRecord

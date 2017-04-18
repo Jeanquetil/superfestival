@@ -3,13 +3,13 @@
 # Table name: concerts
 #
 #  id          :integer          not null, primary key
-#  start_time  :time
-#  end_time    :time
 #  artist_id   :integer
 #  festival_id :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  stage       :string
+#  start_at    :datetime
+#  end_at      :datetime
 #
 # Indexes
 #
