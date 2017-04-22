@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170418210803) do
+ActiveRecord::Schema.define(version: 20170422154943) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -92,7 +92,6 @@ ActiveRecord::Schema.define(version: 20170418210803) do
   add_foreign_key "concerts", "artists"
   add_foreign_key "concerts", "festivals"
   add_foreign_key "participations", "timetables"
-  add_foreign_key "participations", "users"
   add_foreign_key "timetable_events", "concerts"
   add_foreign_key "timetable_events", "timetables"
   add_foreign_key "timetables", "festivals"

@@ -17,10 +17,9 @@
 # Foreign Keys
 #
 #  fk_rails_761caf036c  (timetable_id => timetables.id)
-#  fk_rails_e80f5ca3a2  (user_id => users.id)
 #
 
 class Participation < ApplicationRecord
   belongs_to :timetable
-  belongs_to :user
+  belongs_to :user, optional: true
 end
