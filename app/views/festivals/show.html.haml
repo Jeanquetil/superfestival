@@ -1,0 +1,9 @@
+.container
+  .row
+    .h1= @festival.name
+    .col-xs-8
+      - @festival.concerts.each do |concert|
+        %div= "#{concert.artist.name} | #{concert.start_at} | #{concert.end_at}"
+    .col-xs-4
+      .h2= "Events"
+

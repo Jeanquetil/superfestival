@@ -14,4 +14,5 @@
 class Festival < ApplicationRecord
 	has_many :concerts, dependent: :destroy
 	has_many :artists, through: :concerts
+  has_many :participations
 end
